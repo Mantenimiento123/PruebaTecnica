@@ -9,4 +9,21 @@ Pasos para ejecutar
 5) las peticiones HTTP son las siguientes
 
    Usuarios
-   
+   http://localhost:3000/usuario utilizando el metodo GET se podran visualizar todos los usuarios de la tabla
+   http://localhost:3000/usuario utilizando el metodo POST se podra ingresar información a la tabla agregando información dentro del body
+    {
+    "nombre": "Juanjo",
+    "password": "123",
+    "rol": "estudiante"
+
+  }
+  http://localhost:3000/usuario/1 utilizando el metodo GET se podra visualizar unicamente un registro de la tabla depende de que numero de usuario se seleccione
+  http://localhost:3000/usuario/1 Utilizando el metodo Delete se podra eliminar un registro de la tabla igual depende del numero de usuario que se quiera eliminar 
+  http://localhost:3000/usuario/1 Utilizando el metodo PATCH se podra modificar el registro dentro de la tabla siempre pasandole los datos que queremos modificar e indicandole a que numero de usuario se le aplicara el cambio 
+   {
+    "nombre": "Juanjo",
+    "password": "123",
+    "rol": "estudiante"
+  }
+
+y este es el mismo procedimiento para las peticiones HTTP de las demas tablas 
